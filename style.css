@@ -1,8 +1,14 @@
+/* common styles  */
+
 body{
     padding: 10px 140px;
     background-color: #f4f7ff;
 }
-
+.dashed-line{
+    border-top: 2px dashed lightgray;
+    color: transparent;
+    background-color: transparent;
+}
 
 /* navbar styles  */
 
@@ -45,18 +51,37 @@ body{
     padding: 12px;
     border-radius: 50%;
     background-color: #f4f7ff;
+    cursor: pointer;
+}
+#theme-btn:hover{
+    background-color: #eef1f8;
 }
 
 /* dashboard / home page styles  */
 .dashboard-container{
-    background-color: white;
-    border-radius: 16px;
+    /* background-color: white;
     padding: 24px;
+    border-radius: 16px; */
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard-container section{
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
 }
 .dashboard-heading-container{
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    /* gap: 24px; */
+    margin-bottom: 24px;
+}
+.dashboard-landing{
+    /* width: 80%; */
+}
+.activity-history-container{
+    /* width: 18%; */
 }
 .heading-card{
     background-color: #f4f7ff;
@@ -73,4 +98,71 @@ body{
 .discover-something-card{
     width: 40%;
     background: linear-gradient(#3752FD,#6C7FFA, #9BA8F8);
+    cursor: pointer;
+}
+.discover-something-card:hover{
+    background: #3752FD;
+}
+
+.task-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 36px;
+}
+
+.task-card{
+    background-color: #f4f7ff;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.project-name-container{
+    padding: 10px 20px;
+    border-radius: 16px;
+    background-color: white;
+    width: fit-content;
+}
+.project-name-container p{
+    margin: 0;
+}
+
+.task-description-container{
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.card-footer p,h5{
+margin: 0;
+}
+.card-footer p{
+margin-bottom: 4px;
+color: gray;
+}
+
+.completed-btn{
+    background-color: #3752FD;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+.completed-btn:hover{
+    background-color: #2542ff;
+}
+
+
+/* activity log style  */
+.activity-log-heading{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
