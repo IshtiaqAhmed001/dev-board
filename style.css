@@ -3,6 +3,9 @@ body{
     background-color: #f4f7ff;
 }
 
+
+/* navbar styles  */
+
 .navbar, .nav-items, .completed-counter-container{
     display: flex;
     justify-content: space-between;
@@ -42,4 +45,32 @@ body{
     padding: 12px;
     border-radius: 50%;
     background-color: #f4f7ff;
+}
+
+/* dashboard / home page styles  */
+.dashboard-container{
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+}
+.dashboard-heading-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.heading-card{
+    background-color: #f4f7ff;
+    border-radius: 16px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+}
+.heading-card p{
+    /* margin-bottom: 0; */
+}
+.discover-something-card{
+    width: 40%;
+    background: linear-gradient(#3752FD,#6C7FFA, #9BA8F8);
 }
