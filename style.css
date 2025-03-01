@@ -1,0 +1,45 @@
+body{
+    padding: 10px 140px;
+    background-color: #f4f7ff;
+}
+
+.navbar, .nav-items, .completed-counter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar{
+    padding: 20px 24px;
+    background-color: white;
+    border-radius: 16px;
+}
+.nav-logo-title,#task-completed{
+    padding: 0;
+    margin: 0;
+    font-size: 34px;
+}
+
+
+.nav-items{
+    gap: 25px;
+}
+.completed-counter-container{
+    background-color: #f4f7ff;
+    padding: 8px 16px;
+    border-radius: 32px;
+    gap: 8px;
+}
+#theme-btn{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #f4f7ff;
+}
