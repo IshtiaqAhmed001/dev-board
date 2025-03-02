@@ -1,13 +1,10 @@
-// assigned-task-counter
-// completed-task-counter
-// task-done-btn
-
-
 const completedButtons = document.getElementsByClassName('completed-btn');
 const assignedTaskCounter = document.getElementById('assigned-task-counter');
 const completedTaskCounter = document.getElementById('completed-task-counter');
 const historyItemsContainer = document.getElementById('history-items-container');
 
+
+// completed button functionality 
 
 for (button of completedButtons) {
     button.addEventListener('click', function (e) {
@@ -27,16 +24,11 @@ for (button of completedButtons) {
         newHistory.classList.add('history-item')
         historyItemsContainer.appendChild(newHistory);
 
-
-       
-
         if (assignedTasks === 1) {
             alert('All Tasks Completed!');
             assignedTaskCounter.innerHTML = assignedTasks - 1;
             completedTaskCounter.innerHTML = completedTasks + 1;
-
         }
-
         else if (assignedTasks > 0) {
 
             assignedTaskCounter.innerHTML = assignedTasks - 1;
@@ -45,3 +37,11 @@ for (button of completedButtons) {
 
     });
 }
+
+// theme button functionality 
+const themeButton = document.getElementById('theme-btn');
+
+themeButton.addEventListener('click',function(e){
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+document.body.style.backgroundColor='#'+randomColor;
+})
