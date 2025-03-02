@@ -101,9 +101,7 @@ body{
     gap: 8px;
     font-size: 18px;
 }
-.heading-card p{
-    /* margin-bottom: 0; */
-}
+
 .discover-something-card{
     width: 40%;
     background: linear-gradient(#3752FD,#6C7FFA, #9BA8F8);
@@ -169,7 +167,7 @@ margin-bottom: 4px;
 color: gray;
 }
 
-.completed-btn, .clear-history-btn{
+.completed-btn, .clear-history-btn, #back-home-btn{
     background-color: #3752FD;
     border-radius: 8px;
     border: none;

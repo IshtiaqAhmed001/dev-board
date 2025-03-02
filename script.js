@@ -2,6 +2,13 @@ const completedButtons = document.getElementsByClassName('completed-btn');
 const assignedTaskCounter = document.getElementById('assigned-task-counter');
 const completedTaskCounter = document.getElementById('completed-task-counter');
 const historyItemsContainer = document.getElementById('history-items-container');
+const clearHistoryBtn = document.getElementById('history-btn');
+const themeButton = document.getElementById('theme-btn');
+const discoverPageBtn = document.getElementById('discover-btn');
+const backHomeBtn = document.getElementById('back-home-btn');
+
+
+
 
 
 // completed button functionality 
@@ -39,16 +46,36 @@ for (button of completedButtons) {
 }
 
 // clear history btn functionality 
-const clearHistoryBtn = document.getElementById('history-btn');
-console.log(clearHistoryBtn)
-clearHistoryBtn.addEventListener('click',function(e){
-    document.getElementById('history-items-container').innerHTML='';
-})
+
+if(clearHistoryBtn){
+
+    clearHistoryBtn.addEventListener('click',function(e){
+        if(historyItemsContainer){
+            historyItemsContainer.innerHTML='';
+        }
+    })
+}
 
 // theme button functionality 
-const themeButton = document.getElementById('theme-btn');
+if(themeButton){
+    themeButton.addEventListener('click',function(e){
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor='#'+randomColor;
+    })
+}
 
-themeButton.addEventListener('click',function(e){
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-document.body.style.backgroundColor='#'+randomColor;
-})
+
+
+// page navigation functionality 
+if(discoverPageBtn){
+    discoverPageBtn.addEventListener('click',function(){
+        window.location.href='./new.html';
+    });
+}
+
+if(backHomeBtn){
+    backHomeBtn.addEventListener('click',function(){
+        window.location.href='./index.html';
+    });
+}
+
