@@ -6,7 +6,14 @@ const clearHistoryBtn = document.getElementById('history-btn');
 const themeButton = document.getElementById('theme-btn');
 const discoverPageBtn = document.getElementById('discover-btn');
 const backHomeBtn = document.getElementById('back-home-btn');
+const todaysDate = document.getElementById('date');
 
+// new date and time functionality 
+const date = new Date();
+if(todaysDate){
+    todaysDate.innerHTML=date.toLocaleDateString();
+}
+const currentTime = date.toLocaleTimeString();
 
 
 
@@ -27,7 +34,7 @@ for (button of completedButtons) {
         const selectedCard = e.target.parentElement.parentElement;
         const cardTitle = selectedCard.querySelector('.task-title').innerHTML;
         const newHistory = document.createElement('p');
-        newHistory.innerText='You have completed the task '+cardTitle;
+        newHistory.innerText='You have completed the task '+ cardTitle+ ' at '+currentTime;
         newHistory.classList.add('history-item')
         historyItemsContainer.appendChild(newHistory);
 
@@ -78,4 +85,6 @@ if(backHomeBtn){
         window.location.href='./index.html';
     });
 }
+
+
 
