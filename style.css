@@ -196,3 +196,10 @@ color: gray;
     align-items: center;
     gap: 8px;
 }
+
+.history-item{
+    background-color: #f4f7ff;
+    padding: 10px 20px;
+    border-radius: 16px;
+    color: gray;
+}
