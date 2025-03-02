@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Something New</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./newStyle.css">
 </head>
 
 <body>
@@ -32,27 +31,38 @@
 <div class="question">
     <h3>Question-1: What are the different ways to select an element in the DOM?</h3>
     <hr class="dashed-line">
-    <p>Lorem ipsum d</p>
+    <p>There are five different ways to select an element. They are:
+        document.getElementById("id"), document.getElementsByClassName("class"), document.getElementsByTagName("tag"), document.querySelector("selector"), document.querySelectorAll("selector")
+    </p>
 </div>
 <div class="question">
     <h3>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
     <hr class="dashed-line">
-    <p>Lorem ipsum d</p>
+    <p>The difference between innerHTML, innerText and textContent are:
+        innerHTML: Gets or sets HTML content inside an HTML element.
+innerText: Gets or sets only visible text inside an element.
+textContent: Gets or sets all text, including hidden content, inside an element.
+    </p>
 </div>
 <div class="question">
     <h3>Question-3: What is event delegation in the DOM?</h3>
     <hr class="dashed-line">
-    <p>Lorem ipsum d</p>
+    <p>Event delegation means attaching a single event listener to a parent element instead of adding event listeners to multiple child elements. When a child element is clicked, the event "bubbles up" to the parent, and the parent handles it.
+    </p>
 </div>
 <div class="question">
     <h3>Question-4: What is event bubbling in the DOM?</h3>
     <hr class="dashed-line">
-    <p>Lorem ipsum d</p>
+    <p>Event bubbling means that when an event happens on a child element, it automatically travels up (bubbles) to its parent in the DOM.    </p>
 </div>
 <div class="question">
     <h3>Question-5: How do you create, add, and remove elements using JavaScript?</h3>
     <hr class="dashed-line">
-    <p>Lorem ipsum d</p>
+    <p>To create an element we need to use document.createElement().
+        <br>
+        To add an element using appendChild()
+        <br>
+        To remove an element we need to use remove() or removeChild().</p>
 </div>
 </section>
     </main>
