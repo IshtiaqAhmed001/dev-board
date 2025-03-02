@@ -38,6 +38,13 @@ for (button of completedButtons) {
     });
 }
 
+// clear history btn functionality 
+const clearHistoryBtn = document.getElementById('history-btn');
+console.log(clearHistoryBtn)
+clearHistoryBtn.addEventListener('click',function(e){
+    document.getElementById('history-items-container').innerHTML='';
+})
+
 // theme button functionality 
 const themeButton = document.getElementById('theme-btn');
 
